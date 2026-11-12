@@ -101,17 +101,14 @@ h2{font-size:clamp(1.7rem,3.6vw,2.3rem);margin:4px 0 26px}
 .edu{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-bottom:0}
 
 .edus{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
-.ed{display:flex;flex-direction:column;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:20px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
+.ed{display:flex;flex-direction:column;gap:2px;align-items:flex-start;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:20px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
 .ed:hover{transform:translateY(-4px);border-color:var(--a1)}
-.ring{flex:none;width:104px;height:104px;border-radius:50%;display:grid;place-items:center;
-  background:conic-gradient(var(--a1),var(--a2) calc(var(--p)*1%),var(--rule) 0)}
-.ring span{width:84px;height:84px;border-radius:50%;background:var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1}
-.ring b{font:700 1.45rem "Fraunces",serif} .ring i{font:500 .62rem "Inter";font-style:normal;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
 .ed .yr{font-size:.78rem;font-weight:600;color:var(--a2);letter-spacing:.06em}
 .ed h3{margin:2px 0 0;font-size:1.25rem}
 .ed .inst{color:var(--a1);font-weight:600;font-size:.95rem}
 .ed .inst.hl{font-size:1.05rem;margin-top:6px}
 .ed .inst.hl span{background:linear-gradient(100deg,color-mix(in srgb,var(--a1) 22%,transparent),color-mix(in srgb,var(--a2) 22%,transparent));padding:2px 10px;border-radius:6px;font-weight:700;color:var(--fg)}
+.ed .cg{color:var(--fg);font-size:.92rem}
 .ed p{margin:8px 0 0;color:var(--muted);font-size:.92rem}
 
 /* publications */
