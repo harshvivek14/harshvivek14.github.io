@@ -1,11 +1,11 @@
 :root{
   --bg:#fbfaf7; --bg2:#f1eee7; --card:#ffffff; --fg:#17181c; --muted:#5d6070; --rule:#e4e0d6;
-  --a1:#4f46e5; --a2:#ec4899; --a3:#f59e0b; --glow:rgba(79,70,229,.16);
+  --a1:#2563eb; --a2:#0891b2; --a3:#10b981; --glow:rgba(37,99,235,.16);
   --shadow:0 1px 2px rgba(20,20,40,.05),0 8px 24px rgba(20,20,40,.06);
 }
 :root[data-theme="dark"]{
   --bg:#0c0d14; --bg2:#121420; --card:#161827; --fg:#eceef7; --muted:#9a9eb5; --rule:#262a3d;
-  --a1:#8b8cff; --a2:#ff6fb5; --a3:#ffc15a; --glow:rgba(139,140,255,.18);
+  --a1:#60a5fa; --a2:#22d3ee; --a3:#34d399; --glow:rgba(96,165,250,.18);
   --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
