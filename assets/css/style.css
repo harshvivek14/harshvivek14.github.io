@@ -1,0 +1,71 @@
+:root{
+  --bg:#fff; --fg:#2b2b2b; --muted:#595959; --link:#043361; --accent:#e74d3c;
+  --rule:#e3e3e3; --chip:#eef3f8; --chip-fg:#043361; --card:#fafafa;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#20212b; --fg:#d8dae5; --muted:#a3a6b8; --link:#3eb7f0; --accent:#ff7a6b;
+    --rule:#36384a; --chip:#2c2f40; --chip-fg:#3eb7f0; --card:#262836;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:17px/1.6 "Source Serif 4",Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrapper{max-width:1020px;margin:0 auto;padding:48px 24px;display:flex;gap:56px;align-items:flex-start}
+header{flex:0 0 250px;position:sticky;top:48px;text-align:left}
+header .avatar{width:170px;height:170px;border-radius:50%;object-fit:cover;display:block;margin-bottom:18px}
+header h1{font-size:1.7rem;line-height:1.2;margin:0 0 6px}
+header .position{font-size:1.05rem;display:block}
+header .aff{color:var(--muted);display:block}
+header email{display:block;margin:10px 0 14px;font:14px "Ubuntu Mono",ui-monospace,Menlo,monospace;color:var(--muted)}
+.social{display:flex;flex-wrap:wrap;gap:10px}
+.social a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--rule);color:var(--link);transition:transform .15s}
+.social a:hover{transform:scale(1.15);text-decoration:none}
+.social svg{width:19px;height:19px;fill:currentColor}
+nav{margin-top:26px;display:flex;flex-direction:column;gap:4px;font-size:.95rem}
+nav a{color:var(--muted)} nav a:hover{color:var(--link)}
+main{flex:1;min-width:0}
+section{margin-bottom:38px}
+h2{font-size:1.45rem;margin:0 0 12px;padding-bottom:4px;border-bottom:1px solid var(--rule)}
+p{margin:0 0 12px}
+.news{list-style:none;margin:0;padding:0}
+.news li{display:flex;gap:14px;padding:3px 0}
+.news .d{flex:0 0 78px;color:var(--muted);font:14px/1.9 "Ubuntu Mono",ui-monospace,Menlo,monospace}
+.job{margin-bottom:22px}
+.job .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.job .role{font-weight:700}
+.job .when{color:var(--muted);white-space:nowrap}
+.job .org{color:var(--muted);font-style:italic}
+ul.b{margin:6px 0 0;padding-left:20px} ul.b li{margin:3px 0}
+.edu{width:100%;border-collapse:collapse}
+.edu td{padding:5px 0;vertical-align:top} .edu td:last-child{text-align:right;white-space:nowrap;color:var(--muted)}
+.pub{display:flex;gap:18px;margin-bottom:24px}
+.pub .abbr{flex:0 0 74px}
+.badge{display:inline-block;background:var(--chip);color:var(--chip-fg);font:700 12px/1 "Ubuntu Mono",ui-monospace,monospace;
+  padding:6px 8px;border-radius:4px;text-align:center;min-width:64px}
+.pub .t{font-weight:700;line-height:1.35}
+.pub .au{color:var(--muted);font-size:.95rem}
+.pub .au b{color:var(--fg)}
+.pub .v{font-style:italic;font-size:.95rem}
+.pub .note{color:var(--accent);font-weight:700;font-style:italic;font-size:.92rem}
+.pub ul{margin:6px 0 0;padding-left:18px;font-size:.93rem;color:var(--muted)}
+.links{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}
+.btn{font-size:12px;border:1px solid var(--rule);border-radius:4px;padding:2px 8px;color:var(--link)}
+.btn:hover{background:var(--chip);text-decoration:none}
+.metrics{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.metrics span{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:4px 10px;font-size:.9rem;color:var(--muted)}
+.metrics b{color:var(--fg)}
+.skills dt{font-weight:700;margin-top:8px} .skills dd{margin:0;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.proj{border:1px solid var(--rule);background:var(--card);border-radius:8px;padding:12px 14px;display:block;color:var(--fg)}
+.proj:hover{border-color:var(--link);text-decoration:none}
+.proj b{display:block;color:var(--link)} .proj small{color:var(--muted);display:block;line-height:1.4;margin-top:2px}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--rule);padding-top:14px;margin-top:20px}
+@media (max-width:820px){
+  .wrapper{flex-direction:column;gap:24px;padding:28px 18px}
+  header{position:static;flex:none;width:100%}
+  nav{flex-direction:row;flex-wrap:wrap;gap:12px}
+  .pub{flex-direction:column;gap:6px}
+}
