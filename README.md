@@ -3,5 +3,5 @@
 Personal academic homepage. Static HTML/CSS, no build step.
 
 - Edit `index.html` for content, `assets/css/style.css` for style.
-- Replace `assets/img/avatar.svg` with a photo (update the two `avatar.svg` references in `index.html`).
+- Profile photo: `assets/img/avatar.png`.
 - Replace `assets/files/resume.pdf` to update the CV.
