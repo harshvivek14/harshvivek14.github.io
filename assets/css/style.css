@@ -100,6 +100,19 @@ h2{font-size:clamp(1.7rem,3.6vw,2.3rem);margin:4px 0 26px}
 .card .big{font:700 1.8rem "Fraunces",serif;margin-bottom:2px}
 .edu{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-bottom:0}
 
+.edus{display:grid;gap:16px}
+.ed{display:flex;gap:24px;align-items:center;background:var(--card);border:1px solid var(--rule);border-radius:18px;padding:22px 26px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
+.ed:hover{transform:translateY(-3px);border-color:var(--a1)}
+.ring{flex:none;width:104px;height:104px;border-radius:50%;display:grid;place-items:center;
+  background:conic-gradient(var(--a1),var(--a2) calc(var(--p)*1%),var(--rule) 0)}
+.ring span{width:84px;height:84px;border-radius:50%;background:var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1}
+.ring b{font:700 1.45rem "Fraunces",serif} .ring i{font:500 .62rem "Inter";font-style:normal;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+.ed .yr{font-size:.78rem;font-weight:600;color:var(--a2);letter-spacing:.06em}
+.ed h3{margin:2px 0 0;font-size:1.25rem}
+.ed .inst{color:var(--a1);font-weight:600;font-size:.95rem}
+.ed p{margin:8px 0 0;color:var(--muted);font-size:.92rem}
+@media (max-width:560px){.ed{flex-direction:column;align-items:flex-start}}
+
 /* publications */
 .metrics{display:flex;gap:10px;flex-wrap:wrap;margin:-10px 0 22px}
 .metrics span{border:1px solid var(--rule);background:var(--card);padding:5px 12px;border-radius:99px;font-size:.88rem;color:var(--muted)} .metrics b{color:var(--fg)}
